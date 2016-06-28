@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="registration.css">
+
+    <script src="jquery/dist/jquery.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.js"></script>
+
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row text-center drinkglass"><i class="fa fa-glass fa-5x " aria-hidden="true"></i></div>
+
+        <div class="row">
+            <form action="submit" method="post" role="form">
+            <legend>REGISTER FOR BOOZE</legend>
+
+            <div class="form-group">
+                <label for="formName">Name</label>
+                <input type="text" class="form-control" name="formName" id="formName"
+                       placeholder="Merlot Rouge">
+            </div>
+
+            <div class="form-group">
+                <label for="formEmail">E-Mail</label>
+                <input type="email" class="form-control" name="formEmail" id="formEmail"
+                placeholder="Lychee@Martini.com">
+            </div>
+
+            <div class="form-group">
+                <label for="formContactNumber">Contact Number</label>
+                <input type="number" class="form-control" name="formContactNumber" id="formContactNumber"
+                       placeholder="1234 5678">
+            </div>
+
+            <div class="form-group">
+                <label for="formType">Drink Preferences (Hold control to select as many as you like!)</label>
+                <select multiple class="form-control" name="formType" id="formType">
+                    <option>Spirits</option>
+                    <option>Beer</option>
+                    <option>Wine</option>
+                    <option>Bubbles</option>
+                    <option>Cocktails</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Bottoms Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
